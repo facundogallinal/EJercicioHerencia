@@ -5,10 +5,10 @@ namespace Library
 {
     public class BaseRepository
     {
-        protected void TweetPhoto()
+        protected void TweetPhoto(string text, string pathToImage)
         {
             var twitter = new TwitterImage();
-            Console.WriteLine(twitter.PublishToTwitter("text", @"PathToImage.png"));
+            Console.WriteLine(twitter.PublishToTwitter(text, @pathToImage));
         }
     }
 }
