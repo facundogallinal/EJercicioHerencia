@@ -17,13 +17,13 @@ namespace Ucu.Poo.RideShare
             DriverRepository rideShare = new DriverRepository();
             PassengerRepository passengerShare = new PassengerRepository();
 
-            rideShare.AddDriver(conductor1, "src/Program/bill.jpg");
+            rideShare.AddDriver(conductor1, @"bill.jpg");
             //Se publica en Twitter un nuevo conductor!
 
-            rideShare.AddDriver(conductorPool1,"src/Program/dan.jpg");
+            rideShare.AddDriver(conductorPool1,@"dan.jpg");
             //Se publica en Twitter un nuevo conductor!
 
-            passengerShare.AddPassenger(pasajero1, "src/Program/rick.jpg");
+            passengerShare.AddPassenger(pasajero1, @"rick.jpg");
             //Se publica en Twitter nuevo registro de pasajero!
             
         }
