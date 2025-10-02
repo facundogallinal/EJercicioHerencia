@@ -1,37 +1,31 @@
-﻿namespace Ucu.Poo.RideShare
+﻿using Library;
+
+namespace Ucu.Poo.RideShare
 {
     class Program
     {
         static void Main(string[] args)
         {
-            /*
-            En éste método deberas mostrar un ejemplo de funcionamiento de tu programa. A continuación te
-            planteamos un ejemplo de como hacerlo. Esto no significa que te limites a hacer solamente esto, debes pensar
-            en grande!
+            
+            //En éste método deberas mostrar un ejemplo de funcionamiento de tu programa. A continuación te
+            //planteamos un ejemplo de como hacerlo. Esto no significa que te limites a hacer solamente esto, debes pensar
+            //en grande!
 
-            Usuario pasajero1 = nuevo Pasajero()
-            Usuario pasajero2 = nuevo Pasajero()
-            Usuario pasajero3 = nuevo Pasajero()
-            Usuario conductor1 = nuevo Conductor()
-            Usuario conductorPool1 = nuevo ConductorPool(maxPasajeros = 3)
-            UcuRideShare rideShare = nuevo UcuRideShare()
+            Passenger pasajero1 = new Passenger("Rick","Grimes", 19202134,92);
+            CommonDriver conductor1 = new CommonDriver("Bill","Jones", 12345678, 100, "Mustang", "Encantado de ser tu conductor");
+            PoolDriver conductorPool1 = new PoolDriver("Dan","Ige",24232526, 85, "Polo","Exluchador dispuesto a llevarte a tu destino",4);
+            DriverRepository rideShare = new DriverRepository();
+            PassengerRepository passengerShare = new PassengerRepository();
 
-            rideShare.Add(conductor1)
-            Se publica en Twitter un nuevo conductor!
+            rideShare.AddDriver(conductor1, @"bill.jpg");
+            //Se publica en Twitter un nuevo conductor!
 
-            rideShare.Add(conductorPool1)
-            Se publica en Twitter un nuevo conductor!
+            rideShare.AddDriver(conductorPool1,@"dan.jpg");
+            //Se publica en Twitter un nuevo conductor!
 
-            rideShare.Add(pasajero1)
-            Se publica en Twitter nuevo registro de pasajero!
-
-            rideShare.Add(pasajero2)
-            Se publica en Twitter nuevo registro de pasajero!
-
-            rideShare.Add(pasajero3)
-            Se publica en Twitter nuevo registro de pasajero!
-
-            */
+            passengerShare.AddPassenger(pasajero1, @"rick.jpg");
+            //Se publica en Twitter nuevo registro de pasajero!
+            
         }
     }
 }
